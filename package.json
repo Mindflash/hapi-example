@@ -6,19 +6,21 @@
     "node": ">=4.0.0"
   },
   "dependencies": {
-    "code": "2.x.x",
+    "chance": "^1.0.16",
     "handlebars": "4.x.x",
     "hapi": "11.x.x",
     "inert": "3.x.x",
     "joi": "7.x.x",
-    "lab": "7.x.x",
     "lout": "7.x.x",
     "vision": "4.x.x"
   },
+  "devDependencies": {
+    "code": "2.x.x",
+    "lab": "7.x.x"
+  },
   "scripts": {
     "start": "node server.js",
-    "test": "lab -a code -c",
-    "test-tap": "lab -a code -r tap -o tests.tap",
-    "test-cov-html": "lab -a code -r html -o coverage.html"
+    "test": "lab -a code -l -r tap",
+    "test:coverage": "lab -a code -l -r html -o coverage.html"
   }
 }
