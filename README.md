@@ -1,13 +1,10 @@
-## Products API
+# Setup
 
-* Getting Started
-    * Clone this repository to your local machine.
-    * Make sure you are have node v8.9.4 or higher
-    * Run `npm install -g yarn`
-    * Then in the root project directory run `yarn install`
-* General Info
-    * This project uses the lout plugin [documentation generator](https://github.com/hapijs/lout) to generate API documentation based on Joi validators.  See the `http://localhost:8080/docs` path to see the documentation.
-* Server Endpoints
+ * Clone this repository to your local machine.
+ * Make sure you are have node v8.9.4 or higher
+ * Run `npm install` 
+ 
+# Endpoints
     * GET `http://localhost:8080/products` - Lists all products in the system.
     * GET `http://localhost:8080/products?name=foo` - Lists all products with the name `foo`.
     * GET `http://localhost:8080/products/123` - Returns a single product that has id 123.
