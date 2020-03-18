@@ -5,15 +5,15 @@
  * Run `npm install` 
  
 # Endpoints
-    * GET `http://localhost:8080/products` - Lists all products in the system.
-    * GET `http://localhost:8080/products?name=foo` - Lists all products with the name `foo`.
-    * GET `http://localhost:8080/products/123` - Returns a single product that has id 123.
-    * POST `http://localhost:8080/products` - Creates a new product.
-        * JSON body must include a name and price, and optionally a description.
-        * Name should be a string between 3 and 100 characters
-        * Description should be a string between 5 and 1,000 characters
-        * Price should be a number between 1 and 20,000 with no more than 2 decimal places
-        * Here is an example payload:
+* GET `http://localhost:8080/products` - Lists all products in the system.
+* GET `http://localhost:8080/products?name=foo` - Lists all products with the name `foo`.
+* GET `http://localhost:8080/products/123` - Returns a single product that has id 123.
+* POST `http://localhost:8080/products` - Creates a new product.
+    * JSON body must include a name and price, and optionally a description.
+    * Name should be a string between 3 and 100 characters
+    * Description should be a string between 5 and 1,000 characters
+    * Price should be a number between 1 and 20,000 with no more than 2 decimal places
+    * Here is an example payload:
     
     ```javascript
         {
